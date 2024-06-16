@@ -1,0 +1,94 @@
+<!-- 目录跳转(整个header部分)-->
+<!-- 跳转去的页面是href后面的文件名-->
+<!-- 跳转js还没写，我之后会补上 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body class="blue">
+    <header>
+        <div class="headbar"></div>
+        <div class="navbar">
+            <div class="titlebox">
+                <img class="logo" src="./logo.png" alt="">
+            </div>
+            <div class="titlebox">
+                <a href="./home.html">
+                    Home
+                </a>
+            </div>
+            <div class="titlebox">
+                <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./introduction.html">
+                    Intro
+                </a>
+                <!-- <div class="dropdown-content">
+                    <a href="{{ url_for('pages', page = 'team') }}">Members</a>
+                    <a href="{{ url_for('pages', page = 'attribution') }}">Attributions</a>
+                    <a href="{{ url_for('pages', page = 'collaboration') }}">Collaboration</a>
+                  </div> -->
+            </div>
+            
+            <div class="titlebox">
+                <a href="./search.html">
+                    Search
+                </a>
+            </div>
+            <!-- <div class="titlebox">
+                <a href="">
+                    Inter-Chrom
+                </a>
+            </div> -->
+            <div class="titlebox">
+                 <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./tutorial.html">
+                    Tutorial
+                </a>
+            </div>
+            <div class="titlebox">
+                <a href="./download.html">
+                    Download
+                </a>
+            </div>
+            <div class="titlebox" style="border-right: 0;">
+                <a href="./about.html">
+                    About
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- 侧边栏 -->
+    <div id="sidebar" style="height: 8.3vw;top: 17vw;">
+        <a class="sidebar-link" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(4); return false;">Search</a>
+        <a class="sidebar-link" style="border-bottom: none;" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(4); return false;">Download</a>
+    </div>
+
+
+    <div class="boxbk white">
+        <h1 class="darkblue" style="font-size: 2vw;">Tutorial</h1>
+        <br>
+        <div class="tt">
+            <h3 class="darkblue">Search</h3>
+            <hr class="darkblue">
+            <p>1.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+            <p>2.xxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+            <p>3.</p>
+            <img src="./占位3.png" alt="">
+            <p>4.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        </div>
+        <div class="tt">
+            <h3 class="darkblue">Download</h3>
+            <hr class="darkblue">
+            <p>1.xxxxxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxx xxxxxxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxx xxxxxxx</p>
+            <!-- <p>2.xxxxxxxxxxxxxxxxxxxxxxxxxxxx</p> -->
+            <p>2.</p>
+            <img src="./占位7.png" alt="">
+            <p>3.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        </div>
+    </div>
+</body>
+</html>

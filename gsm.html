@@ -1,0 +1,92 @@
+<!-- 目录跳转(header部分)＋批量显示(已注释)＋额外的跳转(已注释)-->
+<!-- 跳转去的页面是href后面的文件名-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body class="blue">
+    <header>
+        <div class="headbar"></div>
+        <div class="navbar">
+            <div class="titlebox">
+                <img class="logo" src="./logo.png" alt="">
+            </div>
+            <div class="titlebox">
+                <a href="./home.html">
+                    Home
+                </a>
+            </div>
+            <div class="titlebox">
+                <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./introduction.html">
+                    Intro
+                </a>
+                <!-- <div class="dropdown-content">
+                    <a href="{{ url_for('pages', page = 'team') }}">Members</a>
+                    <a href="{{ url_for('pages', page = 'attribution') }}">Attributions</a>
+                    <a href="{{ url_for('pages', page = 'collaboration') }}">Collaboration</a>
+                  </div> -->
+            </div>
+            
+            <div class="titlebox">
+                <a href="./search.html">
+                    Search
+                </a>
+            </div>
+            <!-- <div class="titlebox">
+                <a href="">
+                    Inter-Chrom
+                </a>
+            </div> -->
+            <div class="titlebox">
+                 <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./tutorial.html">
+                    Tutorial
+                </a>
+            </div>
+            <div class="titlebox">
+                <a href="./download.html">
+                    Download
+                </a>
+            </div>
+            <div class="titlebox" style="border-right: 0;">
+                <a href="./about.html">
+                    About
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="boxbk2 white" style="border-bottom: none">
+        <h1 class="darkblue" style="font-size: 2vw;">Search</h1>
+        <br>
+        <!-- 批量显示开始 根据上一页点击的ID查找并显示所有冒号之后的数据 一共11项 数据是我之前发你的表格-->
+        <div class="gsm">
+            <p>ID: 1</p>
+            <!-- 加两个点击跳转 -->
+            <p>GSE: <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE54946">GSE54946</a></p>
+            <p>GSM: <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1327093">GSM1327093</a></p>
+        </div>
+        <div class="other">
+            <p>Biosample: SAMN02640982</p>
+            <p>Organ: prostate</p>
+            <p>Tissue: epithelial tissue</p>
+            <p>Cell Type: Epithelial cell</p>
+            <p>Cell Line: VCaP</p>
+            <p>Normal/Disease: normal </p>
+        </div>
+        <div class="more">
+            <p>Reference: PMID: 30606742</p>
+            <hr>
+            <p>TF article:</p>
+            <!-- <hr> -->
+            <p>An AR-ERG transcriptional signature defined by long-range chromatin interactomes in Prostate Cancer cells</p>
+            <hr>
+        </div>
+        <!-- 批量显示结束 -->
+    </div>
+</body>
+</html>

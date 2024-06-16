@@ -1,0 +1,86 @@
+<!-- 特殊＋目录跳转(整个header部分)-->
+<!-- 跳转去的页面是href后面的文件名-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="headbar"></div>
+        <div class="navbar">
+            <div class="titlebox">
+                <img class="logo" src="./logo.png" alt="">
+            </div>
+            <div class="titlebox">
+                <a href="./home.html">
+                    Home
+                </a>
+            </div>
+            <div class="titlebox">
+                <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./introduction.html">
+                    Intro
+                </a>
+                <!-- <div class="dropdown-content">
+                    <a href="{{ url_for('pages', page = 'team') }}">Members</a>
+                    <a href="{{ url_for('pages', page = 'attribution') }}">Attributions</a>
+                    <a href="{{ url_for('pages', page = 'collaboration') }}">Collaboration</a>
+                  </div> -->
+            </div>
+            
+            <div class="titlebox">
+                <a href="./search.html">
+                    Search
+                </a>
+            </div>
+            <!-- <div class="titlebox">
+                <a href="">
+                    Inter-Chrom
+                </a>
+            </div> -->
+            <div class="titlebox">
+                 <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./tutorial.html">
+                    Tutorial
+                </a>
+            </div>
+            <div class="titlebox">
+                <a href="./download.html">
+                    Download
+                </a>
+            </div>
+            <div class="titlebox" style="border-right: 0;">
+                <a href="./about.html">
+                    About
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="start">
+        <span class="tmmap">TM-MAP</span>
+        <div class="santence">
+            <span class="trycolor">DATABASE</span><span> for all available TF-mediated choromatin interactions</span>
+        </div>
+    </div>
+    <div class="genepic">
+        <img style="width: 26vw;" src="./封页1.png" alt="">
+    </div>
+    <div class="homebox">
+        <div class="graphtitle">
+            <span>Click the </span><span class="trycolor2">Graph</span><span> to Browse</span>
+        </div>
+        <div class="graphep">
+            <span>Proportion of different organ data</span>
+        </div>
+    </div>
+<!-- 特殊：这个是占位图，希望可以做到的效果是根据实际数据先生成一张统计图，然后鼠标放上去能显示统计数据（如占位图所示） -->
+    <div class="homepic">
+        <img style="width: 55vw;" src="./封页2.png" alt="">
+    </div>
+</body>
+</html>

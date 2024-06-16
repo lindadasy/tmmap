@@ -1,0 +1,77 @@
+<!-- 目录跳转(header部分)＋点击下载(已注释)-->
+<!-- 跳转去的页面是href后面的文件名-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body class="blue">
+    <header>
+        <div class="headbar"></div>
+        <div class="navbar">
+            <div class="titlebox">
+                <img class="logo" src="./logo.png" alt="">
+            </div>
+            <div class="titlebox">
+                <a href="./home.html">
+                    Home
+                </a>
+            </div>
+            <div class="titlebox">
+                <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./introduction.html">
+                    Intro
+                </a>
+                <!-- <div class="dropdown-content">
+                    <a href="{{ url_for('pages', page = 'team') }}">Members</a>
+                    <a href="{{ url_for('pages', page = 'attribution') }}">Attributions</a>
+                    <a href="{{ url_for('pages', page = 'collaboration') }}">Collaboration</a>
+                  </div> -->
+            </div>
+            
+            <div class="titlebox">
+                <a href="./search.html">
+                    Search
+                </a>
+            </div>
+            <!-- <div class="titlebox">
+                <a href="">
+                    Inter-Chrom
+                </a>
+            </div> -->
+            <div class="titlebox">
+                 <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./tutorial.html">
+                    Tutorial
+                </a>
+            </div>
+            <div class="titlebox">
+                <a href="./download.html">
+                    Download
+                </a>
+            </div>
+            <div class="titlebox" style="border-right: 0;">
+                <a href="./about.html">
+                    About
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="boxbk2 white">
+        <h1 class="darkblue" style="font-size: 2vw;">Download</h1>
+        <br>
+        <h2 class="darkblue">HiChIP</h2>
+        <br>
+        <!-- 点击两个a标签里的字分别下载HiChIP的peak和loop文件 -->
+        <a style="margin: 0 3vw 0 0;" href="">HiChIP-peak</a> <a href="">HiChIP-loop</a>
+        <br>
+        <!-- 点击两个a标签里的字分别下载Chia-PET的peak和loop文件 -->
+        <h2 class="darkblue" style="margin: 1vw 0 0 0;">Chia-PET</h2>
+        <br>
+        <a style="margin: 0 3vw 0 0;" href="">Chia-PET-peak</a> <a href="">Chia-PET-loop</a>
+    </div>
+</body>
+</html>

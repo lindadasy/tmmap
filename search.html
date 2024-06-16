@@ -1,0 +1,399 @@
+<!-- 特殊＋目录跳转(整个header部分)＋批量显示(已注释)-->
+<!-- 跳转去的页面是href后面的文件名-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Dropdown</title>
+<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body  class="blue">
+    
+    <header>
+        <div class="headbar"></div>
+        <div class="navbar">
+            <div class="titlebox">
+                <img class="logo" src="./logo.png" alt="">
+            </div>
+            <div class="titlebox">
+                <a href="./home.html">
+                    Home
+                </a>
+            </div>
+            <div class="titlebox">
+                <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./introduction.html">
+                    Intro
+                </a>
+                <!-- <div class="dropdown-content">
+                    <a href="{{ url_for('pages', page = 'team') }}">Members</a>
+                    <a href="{{ url_for('pages', page = 'attribution') }}">Attributions</a>
+                    <a href="{{ url_for('pages', page = 'collaboration') }}">Collaboration</a>
+                  </div> -->
+            </div>
+            
+            <div class="titlebox">
+                <a href="./search.html">
+                    Search
+                </a>
+            </div>
+            <!-- <div class="titlebox">
+                <a href="">
+                    Inter-Chrom
+                </a>
+            </div> -->
+            <div class="titlebox">
+                 <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./tutorial.html">
+                    Tutorial
+                </a>
+            </div>
+            <div class="titlebox">
+                <a href="./download.html">
+                    Download
+                </a>
+            </div>
+            <div class="titlebox" style="border-right: 0;">
+                <a href="./about.html">
+                    About
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="searchbgbox white">
+        <h1 class="darkblue" style="display: inline-block;margin-top: 2vw;font-size: 2.5vw;">Search</h1>
+
+        <!-- 根据输入的gsm或者gse编号搜索,也可以两个一起输入。将匹配的数据输出到下面的表格 -->
+        <div class="typecontainer">
+            <input type="text" placeholder=" Please enter the GSE or GSM number here">
+            <button class="typebutton">Search</button>
+        </div>
+
+        <!-- 以下是筛选 以下所有的项目，不点击默认全选。点击后跳出下拉多选框，点击一下则将筛选条件加入多选，选完点击done保存。用户选完6项后，点击search则根据多选的条件筛选数据，输出到下面的表格。点击clear则清空所有的选项。 -->
+        <!-- 重要：以下Option里的选项内容全是为了呈现效果打上去的，是不全的。具体每一个项目的可选内容需要用表格数据根据search title筛一下所有不重复的内容然后批量写上去。 -->
+        <!-- 这部分筛选效果js已经写了，可更改 -->
+        <div class="search">
+            <div class="ser" id="ser1">
+                <span class="searchtitle">Methods</span>
+                <button class="serbtn" onclick="toggleDropdown('serContent1')">All or click on me for selection</button>
+                <div class="ser-content" id="serContent1">
+                    <div class="serr-content">
+                        <a href="#" onclick="toggleOption('Option 1', 'ser1')">HiChIP</a>
+                        <a href="#" onclick="toggleOption('Option 2', 'ser1')">ChIA-PET</a>
+                    </div>
+                    <div class="done-btn-container">
+                        <button class="done-btn" onclick="hideDropdown('serContent1')">Done</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ser" id="ser4">
+                <span class="searchtitle">Cell Type</span>
+                <button class="serbtn" onclick="toggleDropdown('serContent4')">All or click on me for selection</button>
+                <div class="ser-content" id="serContent4">
+                    <div class="serr-content">
+                        <a href="#" onclick="toggleOption('Option A', 'ser4')">B Cell Precursor Leukemia</a>
+                        <a href="#" onclick="toggleOption('Option A', 'ser4')">Activated B Cell</a>
+                        <a href="#" onclick="toggleOption('Option A', 'ser4')">Activated CD4 positive, naive alpha-beta T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option A', 'ser4')">Activated CD4-positive, alpha-beta memory T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option A', 'ser4')">Activated CD4-positive, alpha-beta T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option A', 'ser4')">ALL Cell</a>
+                    </div>
+                    <div class="done-btn-container">
+                        <button class="done-btn" onclick="hideDropdown('serContent4')">Done</button>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="ser" id="ser2">
+                <span class="searchtitle">Cell Line</span>
+                <button class="serbtn" onclick="toggleDropdown('serContent2')">All or click on me for selection</button>
+                <div class="ser-content" id="serContent2">
+                    <div class="serr-content">
+                        <a href="#" onclick="toggleOption('Option A', 'ser2')">VCaP</a>
+                        <a href="#" onclick="toggleOption('Option B', 'ser2')">GM12878</a>
+                        <a href="#" onclick="toggleOption('Option C', 'ser2')">Jurkat</a>
+                        <a href="#" onclick="toggleOption('Option D', 'ser2')">HeLa-S3</a>
+                        <a href="#" onclick="toggleOption('Option E', 'ser2')">TAE resistant Kelly cells</a>
+                        <a href="#" onclick="toggleOption('Option F', 'ser2')">HUVECs</a>
+                    </div>
+                    <div class="done-btn-container">
+                        <button class="done-btn" onclick="hideDropdown('serContent2')">Done</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="ser" style="margin-right: 11vw;margin-top: 2vw;" id="ser3">
+                <span class="searchtitle">TF</span>
+                <button class="serbtn" onclick="toggleDropdown('serContent3')">All or click on me for selection</button>
+                <div class="ser-content" id="serContent3">
+                    <div class="serr-content">
+                        <a href="#" onclick="toggleOption('Option A', 'ser3')">AR</a>
+                        <a href="#" onclick="toggleOption('Option B', 'ser3')">ERG</a>
+                        <a href="#" onclick="toggleOption('Option C', 'ser3')">RAD21</a>
+                        <a href="#" onclick="toggleOption('Option D', 'ser3')">SMC1</a>
+                        <a href="#" onclick="toggleOption('Option E', 'ser3')">CTCF</a>
+                        <a href="#" onclick="toggleOption('Option F', 'ser3')">PML</a>
+                    </div>
+                    <div class="done-btn-container">
+                        <button class="done-btn" onclick="hideDropdown('serContent3')">Done</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="ser" style="margin-top: 2vw;" id="ser5">
+                <span class="searchtitle">Normal/Disease</span>
+                <button class="serbtn" onclick="toggleDropdown('serContent5')">All or click on me for selection</button>
+                <div class="ser-content" id="serContent5">
+                    <div class="serr-content">
+                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Normal</a>
+                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Prostate Cancer</a>
+                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Chronic Myelogenous Leukemia</a>
+                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Acute Lymphoblastic Leukemia</a>
+                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Adenocarcinoma</a>
+                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Neuroblastoma</a>
+                    </div>
+                    <div class="done-btn-container">
+                        <button class="done-btn" onclick="hideDropdown('serContent5')">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="buttons">
+            <button class="search-btn" onclick="search()">Search</button>
+            <button class="clear-btn" onclick="clearSelections()">Clear</button>
+        </div>
+
+        <!-- 目前还只是一个示意图，希望搜索后只每项只要不是单选，每项都生成一个饼图展示样本的分布 -->
+        <div class="figcontainer">
+            <img style="width: 54vw;" src="./eg.png" alt="">
+        </div>
+        <div class="anothercontainer">
+            <div class="tablecontainer">
+                <table>
+                    <tr class="first-row">
+                        <!-- 需要显示的数据，以下每一项都需要根据筛选条件显示对应的数据 -->
+                        <th>ID</th>
+                        <th>GSM</th>
+                        <th>GSE</th>
+                        <th>SRR</th>
+                        <th>TF</th>
+                        <th>biosample</th>
+                        <th>peaks.bed</th>
+                        <th>loops.bed</th>
+                    </tr>
+                    <tr>
+                        <!-- 数据示例 -->
+                        <!-- 第一项ID点击可跳转到gsm界面，具体显示要求在gsm页已注释 -->
+                        <td class="first-col"><a href="./gsm.html">1</a></td>
+                        <!-- 需要点击可跳转到以下网页 -->
+                        <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1327093">GSM1327093</a></td>
+                        <!-- 需要点击可跳转到以下网页 -->
+                        <td><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE54946">GSE54946</a></td>
+                        <td>SRR1168362</td>
+                        <td>AR</td>
+                        <td>SAMN02640982</td>
+                        <!-- 需要点击可下载peak文件 -->
+                        <td><a href="">peaks.bed</a></td>
+                        <!-- 需要点击可下载loop文件 -->
+                        <td><a href="">loops.bed</a></td>
+                    </tr>
+                    <!-- 以下是为了呈现效果创的空表格行，可以删。最后是根据筛选条件，有多少条数据显示多少行 -->
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleDropdown(serId) {
+            var serContent = document.getElementById(serId);
+            var isOpen = serContent.style.display === 'block';
+            hideAllDropdowns(); // 关闭所有下拉框
+            if (!isOpen) {
+                serContent.style.display = 'block';
+                adjustserWidth(serId);
+    
+                // 添加一次性事件监听器
+                document.addEventListener('click', function outsideClickListener(event) {
+                    if (!serContent.contains(event.target) && !serContent.previousElementSibling.contains(event.target)) {
+                        hideDropdown(serId);
+                        clearCurrentSelections(serId);
+                        document.removeEventListener('click', outsideClickListener);
+                    }
+                });
+            }
+        }
+    
+        function hideAllDropdowns() {
+            var serContents = document.querySelectorAll('.ser-content');
+            serContents.forEach(function(serContent) {
+                serContent.style.display = 'none';
+            });
+        }
+    
+        function toggleOption(option, serId) {
+            var optionElement = event.target;
+            optionElement.classList.toggle('selected');
+            updateSelectedOptions(serId);
+            event.preventDefault();
+            event.stopPropagation();
+        }
+    
+        function updateSelectedOptions(serId) {
+            var serbtn = document.querySelector(`#${serId} .serbtn`);
+            var selectedOptions = document.querySelectorAll(`#${serId} .ser-content a.selected`);
+            var selectedText = Array.from(selectedOptions).map(option => option.textContent).join(', ');
+            serbtn.innerHTML = selectedText || 'All or click on me for selection';
+        }
+    
+        function hideDropdown(serId) {
+            var serContent = document.getElementById(serId);
+            serContent.style.display = 'none';
+        }
+    
+        function clearCurrentSelections(serId) {
+            var serContent = document.getElementById(serId);
+            var selectedOptions = serContent.querySelectorAll('a.selected');
+            selectedOptions.forEach(function(option) {
+                option.classList.remove('selected');
+            });
+            var serbtn = document.querySelector(`#${serId} .serbtn`);
+            serbtn.innerHTML = 'All or click on me for selection';
+        }
+    
+        function clearSelections() {
+            var serContents = document.querySelectorAll('.ser-content');
+            serContents.forEach(function(serContent) {
+                var selectedOptions = serContent.querySelectorAll('a.selected');
+                selectedOptions.forEach(function(option) {
+                    option.classList.remove('selected');
+                });
+                var serbtn = serContent.previousElementSibling;
+                serbtn.innerHTML = 'All or click on me for selection';
+            });
+        }
+    
+        function adjustserWidth(serId) {
+            var serbtn = document.querySelector(`#${serId} .serbtn`);
+            var serContent = document.getElementById(serId);
+            serbtn.style.width = serContent.offsetWidth + 'px';
+        }
+    
+        function search() {
+            console.log("Searching...");
+        }
+    </script>
+    
+
+</body>
+</html>

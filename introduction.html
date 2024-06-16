@@ -1,0 +1,129 @@
+<!-- 目录跳转(header部分)＋额外跳转(这个还没整理全,你可以先写一个放着,已注释)-->
+<!-- 跳转去的页面是href后面的文件名-->
+<!-- 侧边栏跳转的JS还没写,你可以不写,我之后这边加 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body class="blue">
+    <header>
+        <div class="headbar"></div>
+        <div class="navbar">
+            <div class="titlebox">
+                <img class="logo" src="./logo.png" alt="">
+            </div>
+            <div class="titlebox">
+                <a href="./home.html">
+                    Home
+                </a>
+            </div>
+            <div class="titlebox">
+                <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./introduction.html">
+                    Intro
+                </a>
+                <!-- <div class="dropdown-content">
+                    <a href="{{ url_for('pages', page = 'team') }}">Members</a>
+                    <a href="{{ url_for('pages', page = 'attribution') }}">Attributions</a>
+                    <a href="{{ url_for('pages', page = 'collaboration') }}">Collaboration</a>
+                  </div> -->
+            </div>
+            
+            <div class="titlebox">
+                <a href="./search.html">
+                    Search
+                </a>
+            </div>
+            <!-- <div class="titlebox">
+                <a href="">
+                    Inter-Chrom
+                </a>
+            </div> -->
+            <div class="titlebox">
+                 <span><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/50553b738128039c507a6801435406eb1469bc028992b71cf38e93f00f12b4a6?" alt="" class="btn-gra"></span>
+                <a href="./tutorial.html">
+                    Tutorial
+                </a>
+            </div>
+            <div class="titlebox">
+                <a href="./download.html">
+                    Download
+                </a>
+            </div>
+            <div class="titlebox" style="border-right: 0;">
+                <a href="./about.html">
+                    About
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 侧边栏 -->
+    <div id="sidebar">
+        <a class="sidebar-link" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(4); return false;">Database</a>
+        <a class="sidebar-link" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(4); return false;">HiChIP and Chia-PET</a>
+        <a class="sidebar-link" style="border-bottom: 0;" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(4); return false;">Relevant Articles</a>
+    </div>
+
+    <!-- 正页 -->
+    <div class="introbox white">
+        <div class="squarecontainer">
+            <div class="square">
+                <div class="smbox">
+                    <img src="./占位1.jpeg" alt="">
+                </div>
+                <div class = "afbox">
+                    <div class="method">
+                        <h1 class="darkblue" style="font-size: 2vw;">HiChIP</h1>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo sit amet turpis vestibulum aliquet. Vivamus euismod nisi ac metus tristique eleifend. Sed consectetur, lectus vel dignissim scelerisque, sem felis faucibus sem, eget fermentum neque mi eu elit. Integer tempus nisl sit amet eros lacinia, id sollicitudin elit faucibus. Sed vel fringilla sapien. Nam bibendum tortor in neque tincidunt, id fermentum leo lacinia. Fusce nec augue vel ipsum fermentum venenatis. Vivamus scelerisque suscipit dapibus. In vestibulum sollicitudin lacinia. Vivamus nec mi at nulla feugiat eleifend. Morbi consequat euismod nunc, nec lacinia lorem accumsan vitae. Sed quis convallis metus. Donec nec magna nec orci luctus tempus.
+                        </p>
+                        <br>
+                        <img src="./占位2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="square">
+                <div class="smbox" style = "border-left:#466d97 0.1vw solid;">
+                    <div class="introtitle">
+                        <h1 class="darkblue" style="font-size: 2vw;">Introduction</h1>
+                        <br>
+                        <p><b>TM-MAP</b></p>
+                        <p>comprehensive TF-mediated chromatin interaction map reveals human disease loci</p>
+                    </div>
+                </div>
+                <div class = "afbox" style = "border-left:#466d97 0.1vw solid;">
+                    <div class="method">
+                        <h1 class="darkblue" style="font-size: 2vw;">Chia-PET</h1>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo sit amet turpis vestibulum aliquet. Vivamus euismod nisi ac metus tristique eleifend. Sed consectetur, lectus vel dignissim scelerisque, sem felis faucibus sem, eget fermentum neque mi eu elit. Integer tempus nisl sit amet eros lacinia, id sollicitudin elit faucibus. Sed vel fringilla sapien. Nam bibendum tortor in neque tincidunt, id fermentum leo lacinia. Fusce nec augue vel ipsum fermentum venenatis. Vivamus scelerisque suscipit dapibus. In vestibulum sollicitudin lacinia. Vivamus nec mi at nulla feugiat eleifend. Morbi consequat euismod nunc, nec lacinia lorem accumsan vitae. Sed quis convallis metus. Donec nec magna nec orci luctus tempus.</p>
+                        <br>
+                        <img src="./占位2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introfinalbox">
+            <div class="refbox">
+                <div class="refcontent">
+                    <div class="reftitle">
+                        <h1 class="darkblue">Relevant Articles</h1>
+                    </div>
+                    <p style="font-size: 1.3vw;">references and links of relevant articles</p>
+                    <br>
+                    <!-- 跳转 -->
+                    <a href="https://www.nature.com/articles/s41586-020-03145-z">https://www.nature.com/articles/s41586-020-03145-z</a><span>   (Epimap paper)</span>
+                    <br>
+                    <hr class="hrcss">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
