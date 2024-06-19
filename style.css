@@ -176,7 +176,6 @@ body{
     align-items: center; 
     display:flex;
     height:32vw;
-    border-bottom: #466d97 0.1vw solid;
 }
 .afbox{
     display:flex;
@@ -217,6 +216,41 @@ img {
 .hrcss{
     border: 0.1vw solid #466d97;
      margin: 1vw 0 0 0 ;
+}
+.intronew1{
+    /* background-color: #82aede; */
+    width: 100%;
+    /* border-bottom: #466d97 0.1vw solid; */
+    /* border-right: #466d97 0.1vw solid; */
+    border-bottom: #466d97 0.1vw solid;
+}
+.intronew1inner{
+    text-align: left;
+    padding: 3vw 5vw 3vw 5vw;
+    font-size: 1.2vw;
+}
+.introhic{
+    width: 100%;
+}
+.hichip{
+    padding: 3vw 5vw 3vw 5vw;
+    font-size: 1.2vw;
+    border-bottom: #466d97 0.1vw solid;
+}
+.custom-list {
+    list-style-type: none; 
+    /* padding-left: 1vw; */
+}
+.custom-list li {
+    position: relative;
+    /* padding-left: 1vw; 为::before伪元素腾出空间 */
+    /* margin-bottom: 10px; */
+}
+
+.custom-list li::before {
+    content: '•'; 
+    font-size: 2vw;
+    color:  #466d97; 
 }
 
 /* about */
@@ -282,6 +316,11 @@ img {
     width: 100%;
     border-bottom: #466d97 0.1vw solid;
     /* border-right: black 0.1vw solid; */
+}
+.abintro{
+    padding: 3vw 5vw;
+    text-align: left;
+    font-size: 1.2vw;
 }
 .abbgbox{
     margin: 3vw 7vw 3vw 7vw;
