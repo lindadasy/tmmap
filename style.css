@@ -235,7 +235,7 @@ img {
 .hichip{
     padding: 3vw 5vw 3vw 5vw;
     font-size: 1.2vw;
-    border-bottom: #466d97 0.1vw solid;
+    /* border-bottom: #466d97 0.1vw solid; */
 }
 .custom-list {
     list-style-type: none; 
