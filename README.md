@@ -1,6 +1,6 @@
 # tmmap
 # 待实现需求
-1.页边栏的跳转JS
+1.页边栏的跳转JS<br> 
 2.Search页单独的clear按钮
 3.About页teammember照片排版（7个名字学位职位）
 4.左上logo加大，超出下面边框，背景透明（还要问一下子宜）
