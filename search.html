@@ -7,6 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Custom Dropdown</title>
 <link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="echarts.js"></script>
 </head>
 <body  class="blue">
     
@@ -100,12 +102,64 @@
                 <button class="serbtn" onclick="toggleDropdown('serContent4')">All or click on me for selection</button>
                 <div class="ser-content" id="serContent4">
                     <div class="serr-content">
-                        <a href="#" onclick="toggleOption('Option A', 'ser4')">B Cell Precursor Leukemia</a>
-                        <a href="#" onclick="toggleOption('Option A', 'ser4')">Activated B Cell</a>
-                        <a href="#" onclick="toggleOption('Option A', 'ser4')">Activated CD4 positive, naive alpha-beta T primary cell</a>
-                        <a href="#" onclick="toggleOption('Option A', 'ser4')">Activated CD4-positive, alpha-beta memory T primary cell</a>
-                        <a href="#" onclick="toggleOption('Option A', 'ser4')">Activated CD4-positive, alpha-beta T primary cell</a>
-                        <a href="#" onclick="toggleOption('Option A', 'ser4')">ALL Cell</a>
+                        <a href="#" onclick="toggleOption('Option 1', 'ser4')">Prostate Cancer Cell</a>
+                        <a href="#" onclick="toggleOption('Option 2', 'ser4')">Kidney Rhabdoid Tumor Cell</a>
+                        <a href="#" onclick="toggleOption('Option 3', 'ser4')">B Cell Precursor Leukemia Cell</a>
+                        <a href="#" onclick="toggleOption('Option 4', 'ser4')">Activated B Cell</a>
+                        <a href="#" onclick="toggleOption('Option 5', 'ser4')">Activated CD4 positive, naive alpha-beta T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option 6', 'ser4')">Activated CD4-positive, alpha-beta memory T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option 7', 'ser4')">Activated CD4-positive, alpha-beta T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option 8', 'ser4')">Activated CD8-positive, alpha-beta memory T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option 9', 'ser4')">Activated CD8-positive, alpha-beta T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option 10', 'ser4')">B Primary Cell</a>
+                        <a href="#" onclick="toggleOption('Option 11', 'ser4')">B-ALL Cell</a>
+                        <a href="#" onclick="toggleOption('Option 12', 'ser4')">B-Lymphocyte</a>
+                        <a href="#" onclick="toggleOption('Option 13', 'ser4')">Breast Adenocarcinoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 14', 'ser4')">CD4-positive naive resting alpha-beta T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option 15', 'ser4')">CD4-positive, alpha-beta memory T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option 16', 'ser4')">CD4-positive, alpha-beta T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option 17', 'ser4')">CD8-positive, alpha-beta memory T primary cell</a>
+                        <a href="#" onclick="toggleOption('Option 18', 'ser4')">Cervical Carcinoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 19', 'ser4')">Chronic Myeloid Leukemia Cell</a>
+                        <a href="#" onclick="toggleOption('Option 20', 'ser4')">Colorectal Carcinoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 21', 'ser4')">Common myeloid progenitor, CD34-positive primary cell</a>
+                        <a href="#" onclick="toggleOption('Option 22', 'ser4')">Early Monocycte/Macrophages</a>
+                        <a href="#" onclick="toggleOption('Option 23', 'ser4')">Ewing Sarcoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 24', 'ser4')">Fetal Buttock/Thigh Fibroblast</a>
+                        <a href="#" onclick="toggleOption('Option 25', 'ser4')">Fetal Lung Fibroblast</a>
+                        <a href="#" onclick="toggleOption('Option 26', 'ser4')">H9 Human Embryonic Stem Cell</a>
+                        <a href="#" onclick="toggleOption('Option 27', 'ser4')">Hepatocellular Carcinoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 28', 'ser4')">Human Embryonic Kidney Cell</a>
+                        <a href="#" onclick="toggleOption('Option 29', 'ser4')">Immortalized Prostate Epithelial Cell</a>
+                        <a href="#" onclick="toggleOption('Option 30', 'ser4')">Lung Carcinoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 31', 'ser4')">Lymphoblastoid Cell</a>
+                        <a href="#" onclick="toggleOption('Option 32', 'ser4')">Mammary Epithelial Cell</a>
+                        <a href="#" onclick="toggleOption('Option 33', 'ser4')">Monocyte</a>
+                        <a href="#" onclick="toggleOption('Option 34', 'ser4')">Multiple Myeloma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 35', 'ser4')">Myloid Cell</a>
+                        <a href="#" onclick="toggleOption('Option 36', 'ser4')">Neuroblastoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 37', 'ser4')">Prostate Carcinoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 38', 'ser4')">Pulmonary Artery Endothelial Cell</a>
+                        <a href="#" onclick="toggleOption('Option 39', 'ser4')">Skin Fibroblast</a>
+                        <a href="#" onclick="toggleOption('Option 40', 'ser4')">Umbilical Vein Endotheliall Cell</a>
+                        <a href="#" onclick="toggleOption('Option 41', 'ser4')">Erythroid Precursor Cell</a>
+                        <a href="#" onclick="toggleOption('Option 42', 'ser4')">Bladder Carcinoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 43', 'ser4')">Diffuse Histiocytic Lymphoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 44', 'ser4')">Fibroblast Primary Cell</a>
+                        <a href="#" onclick="toggleOption('Option 45', 'ser4')">Hepatocyte</a>
+                        <a href="#" onclick="toggleOption('Option 46', 'ser4')">hTERT-Immortalized Cell</a>
+                        <a href="#" onclick="toggleOption('Option 47', 'ser4')">Induced Pluripotent Stem Cells Derived from PBMC</a>
+                        <a href="#" onclick="toggleOption('Option 48', 'ser4')">Neural Cell</a>
+                        <a href="#" onclick="toggleOption('Option 49', 'ser4')">Neural Progenitor Cell</a>
+                        <a href="#" onclick="toggleOption('Option 50', 'ser4')">Retinal Pigment Epithelial cell</a>
+                        <a href="#" onclick="toggleOption('Option 51', 'ser4')">T-ALL Cell</a>
+                        <a href="#" onclick="toggleOption('Option 52', 'ser4')">Thyroid Carcinoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 53', 'ser4')">Embryonic Stem Cell</a>
+                        <a href="#" onclick="toggleOption('Option 54', 'ser4')">Surface Ectoderm Cell</a>
+                        <a href="#" onclick="toggleOption('Option 55', 'ser4')">TAE Resistant Neuroblastoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 56', 'ser4')">Mantle Cell Lymphoma Cell</a>
+                        <a href="#" onclick="toggleOption('Option 57', 'ser4')">Triple-Negative Breast Cancer Cell</a>
+                        <a href="#" onclick="toggleOption('Option 58', 'ser4')">NCCIT_Stem-like_Cells</a>
                     </div>
                     <div class="done-btn-container">
                         <button class="done-btn" onclick="hideDropdown('serContent4')">Done</button>
@@ -120,12 +174,69 @@
                 <button class="serbtn" onclick="toggleDropdown('serContent2')">All or click on me for selection</button>
                 <div class="ser-content" id="serContent2">
                     <div class="serr-content">
-                        <a href="#" onclick="toggleOption('Option A', 'ser2')">VCaP</a>
-                        <a href="#" onclick="toggleOption('Option B', 'ser2')">GM12878</a>
-                        <a href="#" onclick="toggleOption('Option C', 'ser2')">Jurkat</a>
-                        <a href="#" onclick="toggleOption('Option D', 'ser2')">HeLa-S3</a>
-                        <a href="#" onclick="toggleOption('Option E', 'ser2')">TAE resistant Kelly cells</a>
-                        <a href="#" onclick="toggleOption('Option F', 'ser2')">HUVECs</a>
+                        <a href="#" onclick="toggleOption('Option 1', 'ser2')">VCaP</a>
+                        <a href="#" onclick="toggleOption('Option 2', 'ser2')">G401</a>
+                        <a href="#" onclick="toggleOption('Option 3', 'ser2')">SEM</a>
+                        <a href="#" onclick="toggleOption('Option 4', 'ser2')">ALL cell line</a>
+                        <a href="#" onclick="toggleOption('Option 5', 'ser2')">JIH5</a>
+                        <a href="#" onclick="toggleOption('Option 6', 'ser2')">GM12878</a>
+                        <a href="#" onclick="toggleOption('Option 7', 'ser2')">GM10248</a>
+                        <a href="#" onclick="toggleOption('Option 8', 'ser2')">MCF-7</a>
+                        <a href="#" onclick="toggleOption('Option 9', 'ser2')">HeLa-S3</a>
+                        <a href="#" onclick="toggleOption('Option 10', 'ser2')">K562</a>
+                        <a href="#" onclick="toggleOption('Option 11', 'ser2')">HCT-116</a>
+                        <a href="#" onclick="toggleOption('Option 12', 'ser2')">OCI-AML3</a>
+                        <a href="#" onclick="toggleOption('Option 13', 'ser2')">A673</a>
+                        <a href="#" onclick="toggleOption('Option 14', 'ser2')">AG04449</a>
+                        <a href="#" onclick="toggleOption('Option 15', 'ser2')">IMR-90</a>
+                        <a href="#" onclick="toggleOption('Option 16', 'ser2')">H9 hESCs</a>
+                        <a href="#" onclick="toggleOption('Option 17', 'ser2')">HepG2</a>
+                        <a href="#" onclick="toggleOption('Option 18', 'ser2')">HEK-293</a>
+                        <a href="#" onclick="toggleOption('Option 19', 'ser2')">HEK293T</a>
+                        <a href="#" onclick="toggleOption('Option 20', 'ser2')">RWPE1</a>
+                        <a href="#" onclick="toggleOption('Option 21', 'ser2')">A549</a>
+                        <a href="#" onclick="toggleOption('Option 22', 'ser2')">Lymphoblastoid cell lines (LCLs)</a>
+                        <a href="#" onclick="toggleOption('Option 23', 'ser2')">MCF-10A</a>
+                        <a href="#" onclick="toggleOption('Option 24', 'ser2')">THP-1</a>
+                        <a href="#" onclick="toggleOption('Option 25', 'ser2')">Multiple Myeloma Cell Line</a>
+                        <a href="#" onclick="toggleOption('Option 26', 'ser2')">NB4</a>
+                        <a href="#" onclick="toggleOption('Option 27', 'ser2')">U937-PR9</a>
+                        <a href="#" onclick="toggleOption('Option 28', 'ser2')">SK-N-SH</a>
+                        <a href="#" onclick="toggleOption('Option 29', 'ser2')">22Rv1</a>
+                        <a href="#" onclick="toggleOption('Option 30', 'ser2')">Pulmonary Artery Endothelial Cell</a>
+                        <a href="#" onclick="toggleOption('Option 31', 'ser2')">BJ</a>
+                        <a href="#" onclick="toggleOption('Option 32', 'ser2')">HUVEC</a>
+                        <a href="#" onclick="toggleOption('Option 33', 'ser2')">Erythroid precursor</a>
+                        <a href="#" onclick="toggleOption('Option 34', 'ser2')">HT-1197</a>
+                        <a href="#" onclick="toggleOption('Option 35', 'ser2')">HT-1376</a>
+                        <a href="#" onclick="toggleOption('Option 36', 'ser2')">KU-19-19</a>
+                        <a href="#" onclick="toggleOption('Option 37', 'ser2')">GM12891</a>
+                        <a href="#" onclick="toggleOption('Option 38', 'ser2')">GM12892</a>
+                        <a href="#" onclick="toggleOption('Option 39', 'ser2')">GM19238</a>
+                        <a href="#" onclick="toggleOption('Option 40', 'ser2')">GM19239</a>
+                        <a href="#" onclick="toggleOption('Option 41', 'ser2')">GM19240</a>
+                        <a href="#" onclick="toggleOption('Option 42', 'ser2')">SU-DHL-4</a>
+                        <a href="#" onclick="toggleOption('Option 43', 'ser2')">SU-DHL-2</a>
+                        <a href="#" onclick="toggleOption('Option 44', 'ser2')">MSFIB</a>
+                        <a href="#" onclick="toggleOption('Option 45', 'ser2')">originated from H9-hESC</a>
+                        <a href="#" onclick="toggleOption('Option 46', 'ser2')">hTERT-HME1</a>
+                        <a href="#" onclick="toggleOption('Option 47', 'ser2')">MSiPS</a>
+                        <a href="#" onclick="toggleOption('Option 48', 'ser2')">NCI-H1437</a>
+                        <a href="#" onclick="toggleOption('Option 49', 'ser2')">MSLCL</a>
+                        <a href="#" onclick="toggleOption('Option 50', 'ser2')">originated from H1-hESC</a>
+                        <a href="#" onclick="toggleOption('Option 51', 'ser2')">LNCAP</a>
+                        <a href="#" onclick="toggleOption('Option 52', 'ser2')">DU 145</a>
+                        <a href="#" onclick="toggleOption('Option 53', 'ser2')">ARPE-19</a>
+                        <a href="#" onclick="toggleOption('Option 54', 'ser2')">Jurkat clone E61</a>
+                        <a href="#" onclick="toggleOption('Option 55', 'ser2')">K1</a>
+                        <a href="#" onclick="toggleOption('Option 56', 'ser2')">hESCs</a>
+                        <a href="#" onclick="toggleOption('Option 57', 'ser2')">KELLY</a>
+                        <a href="#" onclick="toggleOption('Option 58', 'ser2')">Jurkat</a>
+                        <a href="#" onclick="toggleOption('Option 59', 'ser2')">Rec-1</a>
+                        <a href="#" onclick="toggleOption('Option 60', 'ser2')">DND41</a>
+                        <a href="#" onclick="toggleOption('Option 61', 'ser2')">HCC1599</a>
+                        <a href="#" onclick="toggleOption('Option 62', 'ser2')">MB157</a>
+                        <a href="#" onclick="toggleOption('Option 63', 'ser2')">NCCIT_Stem-like_Cells</a>
                     </div>
                     <div class="done-btn-container">
                         <button class="done-btn" onclick="hideDropdown('serContent2')">Done</button>
@@ -140,11 +251,22 @@
                 <div class="ser-content" id="serContent3">
                     <div class="serr-content">
                         <a href="#" onclick="toggleOption('Option A', 'ser3')">AR</a>
-                        <a href="#" onclick="toggleOption('Option B', 'ser3')">ERG</a>
-                        <a href="#" onclick="toggleOption('Option C', 'ser3')">RAD21</a>
-                        <a href="#" onclick="toggleOption('Option D', 'ser3')">SMC1</a>
-                        <a href="#" onclick="toggleOption('Option E', 'ser3')">CTCF</a>
-                        <a href="#" onclick="toggleOption('Option F', 'ser3')">PML</a>
+                        <a href="#" onclick="toggleOption('Option B', 'ser3')">ARID1A</a>
+                        <a href="#" onclick="toggleOption('Option C', 'ser3')">CTCF</a>
+                        <a href="#" onclick="toggleOption('Option D', 'ser3')">DAXX</a>
+                        <a href="#" onclick="toggleOption('Option E', 'ser3')">ERG</a>
+                        <a href="#" onclick="toggleOption('Option F', 'ser3')">GATA1</a>
+                        <a href="#" onclick="toggleOption('Option G', 'ser3')">KLF4</a>
+                        <a href="#" onclick="toggleOption('Option H', 'ser3')">NANOG</a>
+                        <a href="#" onclick="toggleOption('Option I', 'ser3')">No Treatment</a>
+                        <a href="#" onclick="toggleOption('Option J', 'ser3')">OCT4</a>
+                        <a href="#" onclick="toggleOption('Option K', 'ser3')">PML</a>
+                        <a href="#" onclick="toggleOption('Option L', 'ser3')">RAD21</a>
+                        <a href="#" onclick="toggleOption('Option M', 'ser3')">RARA</a>
+                        <a href="#" onclick="toggleOption('Option N', 'ser3')">SMC1</a>
+                        <a href="#" onclick="toggleOption('Option O', 'ser3')">SMC1A</a>
+                        <a href="#" onclick="toggleOption('Option P', 'ser3')">YY1</a>
+                        <a href="#" onclick="toggleOption('Option Q', 'ser3')">ZNF384</a>
                     </div>
                     <div class="done-btn-container">
                         <button class="done-btn" onclick="hideDropdown('serContent3')">Done</button>
@@ -158,12 +280,44 @@
                 <button class="serbtn" onclick="toggleDropdown('serContent5')">All or click on me for selection</button>
                 <div class="ser-content" id="serContent5">
                     <div class="serr-content">
-                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Normal</a>
-                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Prostate Cancer</a>
-                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Chronic Myelogenous Leukemia</a>
-                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Acute Lymphoblastic Leukemia</a>
-                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Adenocarcinoma</a>
-                        <a href="#" onclick="toggleOption('Option A', 'ser5')">Neuroblastoma</a>
+                        <a href="#" onclick="toggleOption('Option 1', 'ser5')">Prostate Cancer</a>
+                        <a href="#" onclick="toggleOption('Option 2', 'ser5')">Rhabdoid Tumor</a>
+                        <a href="#" onclick="toggleOption('Option 3', 'ser5')">Acute Lymphoblastic Leukemia</a>
+                        <a href="#" onclick="toggleOption('Option 4', 'ser5')">Chronic Myelogenous Leukemia</a>
+                        <a href="#" onclick="toggleOption('Option 5', 'ser5')">Clinically Normal; 4 paternal cousins have Cornelia de Lange syndrome</a>
+                        <a href="#" onclick="toggleOption('Option 6', 'ser5')">Breast Adenocarcinoma</a>
+                        <a href="#" onclick="toggleOption('Option 7', 'ser5')">Cervical Carcinoma</a>
+                        <a href="#" onclick="toggleOption('Option 8', 'ser5')">Colorectal Carcinoma</a>
+                        <a href="#" onclick="toggleOption('Option 9', 'ser5')">Acute Myeloid Leukemia</a>
+                        <a href="#" onclick="toggleOption('Option 10', 'ser5')">Ewings Sarcoma</a>
+                        <a href="#" onclick="toggleOption('Option 11', 'ser5')">Normal</a>
+                        <a href="#" onclick="toggleOption('Option 12', 'ser5')">Hepatocellular Carcinoma</a>
+                        <a href="#" onclick="toggleOption('Option 13', 'ser5')">Lung Carcinoma</a>
+                        <a href="#" onclick="toggleOption('Option 14', 'ser5')">Systemic Lupus Erythematosus</a>
+                        <a href="#" onclick="toggleOption('Option 15', 'ser5')">Fibrocystic Disease</a>
+                        <a href="#" onclick="toggleOption('Option 16', 'ser5')">Acute monocytic Leukemia</a>
+                        <a href="#" onclick="toggleOption('Option 17', 'ser5')">Myeloma</a>
+                        <a href="#" onclick="toggleOption('Option 18', 'ser5')">Acute Promyeloid Leukemia</a>
+                        <a href="#" onclick="toggleOption('Option 19', 'ser5')">Neuroblastoma</a>
+                        <a href="#" onclick="toggleOption('Option 20', 'ser5')">Pulmonary Arterial Hypertension</a>
+                        <a href="#" onclick="toggleOption('Option 21', 'ser5')">Unspecified</a>
+                        <a href="#" onclick="toggleOption('Option 22', 'ser5')">Abortion</a>
+                        <a href="#" onclick="toggleOption('Option 23', 'ser5')">TNF-induced inflammatory signaling</a>
+                        <a href="#" onclick="toggleOption('Option 24', 'ser5')">Bladder carcinoma</a>
+                        <a href="#" onclick="toggleOption('Option 25', 'ser5')">Diffuse Histiocytic Lymphoma</a>
+                        <a href="#" onclick="toggleOption('Option 26', 'ser5')">Large Cell Lymphoma; Diffuse Histiocytic Lymphoma</a>
+                        <a href="#" onclick="toggleOption('Option 27', 'ser5')">Type 2 Diabetes</a>
+                        <a href="#" onclick="toggleOption('Option 28', 'ser5')">Type 3 Diabetes</a>
+                        <a href="#" onclick="toggleOption('Option 29', 'ser5')">Type 4 Diabetes</a>
+                        <a href="#" onclick="toggleOption('Option 30', 'ser5')">Type 5 Diabetes</a>
+                        <a href="#" onclick="toggleOption('Option 31', 'ser5')">Stage 1 Adenocarcinoma; non-small Lung cancer</a>
+                        <a href="#" onclick="toggleOption('Option 32', 'ser5')">Type 6 Diabetes</a>
+                        <a href="#" onclick="toggleOption('Option 33', 'ser5')">Type 7 Diabetes</a>
+                        <a href="#" onclick="toggleOption('Option 34', 'ser5')">Acute T Cell Leukemia</a>
+                        <a href="#" onclick="toggleOption('Option 35', 'ser5')">Thyroid Carcinoma</a>
+                        <a href="#" onclick="toggleOption('Option 36', 'ser5')">Mantle Cell Lymphoma</a>
+                        <a href="#" onclick="toggleOption('Option 37', 'ser5')">T-Acute Lymphoblastic Leukemia</a>
+                        <a href="#" onclick="toggleOption('Option 38', 'ser5')">Triple-Negative Breast Cancer</a>
                     </div>
                     <div class="done-btn-container">
                         <button class="done-btn" onclick="hideDropdown('serContent5')">Done</button>
@@ -179,10 +333,17 @@
         </div>
 
         <!-- 目前还只是一个示意图，希望搜索后只每项只要不是单选，每项都生成一个饼图展示样本的分布 -->
-        <div class="figcontainer">
-            <img style="width: 54vw;" src="./eg.png" alt="">
+        <div class="figcontainer swiper-container">
+            <div class="swiper-wrapper">
+                <div id="pic1" class="swiper-slide" style="width: 50vw;height:40vw;"></div>
+                <div id="pic2" class="swiper-slide" style="width: 50vw;height:40vw;"></div>
+            </div>
+            <!-- <div class="swiper-pagination"></div>
+            添加导航按钮 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <p style="position: relative; top: 17vw;right: 25vw;font-size: 1.1vw;">Showing <span style="color: #859fcf;">xxx</span> entries</p>
+        <p style="position: relative; top: 19vw;right: 25vw;font-size: 1.1vw;">Showing <span style="color: #859fcf;">xxx</span> entries</p>
         <div class="anothercontainer">
             <div class="tablecontainer">
                 <table>
@@ -196,6 +357,7 @@
                         <th>biosample</th>
                         <th>peaks.bed</th>
                         <th>loops.bed</th>
+                        <th>attotation.txt</th>
                     </tr>
                     <tr>
                         <!-- 数据示例 -->
@@ -212,6 +374,7 @@
                         <td><a href="">peaks.bed</a></td>
                         <!-- 需要点击可下载loop文件 -->
                         <td><a href="">loops.bed</a></td>
+                        <td><a href="">attotation.txt</a></td>
                     </tr>
                     <!-- 以下是为了呈现效果创的空表格行，可以删。最后是根据筛选条件，有多少条数据显示多少行 -->
                     <tr>
@@ -223,29 +386,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                    </tr>
-                    <tr>
-                        <td class="first-col"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td class="first-col"></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="first-col"></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -263,29 +408,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                    </tr>
-                    <tr>
-                        <td class="first-col"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td class="first-col"></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="first-col"></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -303,9 +430,55 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="first-col"></td>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -319,7 +492,7 @@
         </div>
     </div>
 
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         function toggleDropdown(serId) {
             var serContent = document.getElementById(serId);
@@ -398,6 +571,119 @@
         function search() {
             console.log("Searching...");
         }
+
+
+        var swiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // Echarts
+        // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('pic1'));
+        
+      // 指定图表的配置项和数据
+      var option = {
+        legend: {
+            text:"Hallo",
+    top: 'bottom'
+  },
+  title: {
+    text: 'Nightingale Chart',
+    subtext: 'Fake Data',
+    left: 'center'
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  series: [
+    {
+      name: 'Nightingale Chart',
+      type: 'pie',
+      radius: [50, 250],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 8
+      },
+      data: [
+        { value: 40, name: 'rose 1' },
+        { value: 38, name: 'rose 2' },
+        { value: 32, name: 'rose 3' },
+        { value: 30, name: 'rose 4' },
+        { value: 28, name: 'rose 5' },
+        { value: 26, name: 'rose 6' },
+        { value: 22, name: 'rose 7' },
+        { value: 18, name: 'rose 8' }
+      ]
+    }
+  ]
+};
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+
+      var myChart1 = echarts.init(document.getElementById('pic2'));
+        
+      // 指定图表的配置项和数据
+      var option = {
+        legend: {
+            text:"Hallo",
+    top: 'bottom'
+  },
+  title: {
+    text: 'Nightingale Chart',
+    subtext: 'Fake Data',
+    left: 'center'
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  series: [
+    {
+      name: 'Nightingale Chart',
+      type: 'pie',
+      radius: [50, 250],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 8
+      },
+      data: [
+        { value: 40, name: 'rose 1' },
+        { value: 38, name: 'rose 2' },
+        { value: 32, name: 'rose 3' },
+        { value: 30, name: 'rose 4' },
+        { value: 28, name: 'rose 5' },
+        { value: 26, name: 'rose 6' },
+        { value: 22, name: 'rose 7' },
+        { value: 18, name: 'rose 8' }
+      ]
+    }
+  ]
+};
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart1.setOption(option);
     </script>
     
 
