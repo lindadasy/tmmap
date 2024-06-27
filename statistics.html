@@ -7,6 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Custom Dropdown</title>
 <link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="echarts.js"></script>
 </head>
 <body  class="blue">
     
@@ -97,9 +99,124 @@
         <h1 class="darkblue" style="font-size: 2vw;">Graphs</h1>
         <br>
         <div class="statisgracontainer">
-            <img src="./占位8.png" alt="">
+          <div id="pic1" class="grast" style="width: 50vw;height:40vw;"></div><br>
+          <div id="pic2" class="grast" style="width: 50vw;height:40vw;"></div>
         </div>
-    </div>
-
+    
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+
+        // Echarts
+        // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('pic1'));
+        
+      // 指定图表的配置项和数据
+      var option = {
+        legend: {
+            text:"Hallo",
+    top: 'bottom'
+  },
+  title: {
+    text: 'Nightingale Chart',
+    subtext: 'Fake Data',
+    left: 'center'
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  series: [
+    {
+      name: 'Nightingale Chart',
+      type: 'pie',
+      radius: [50, 250],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 8
+      },
+      data: [
+        { value: 40, name: 'rose 1' },
+        { value: 38, name: 'rose 2' },
+        { value: 32, name: 'rose 3' },
+        { value: 30, name: 'rose 4' },
+        { value: 28, name: 'rose 5' },
+        { value: 26, name: 'rose 6' },
+        { value: 22, name: 'rose 7' },
+        { value: 18, name: 'rose 8' }
+      ]
+    }
+  ]
+};
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+
+      var myChart1 = echarts.init(document.getElementById('pic2'));
+        
+      // 指定图表的配置项和数据
+      var option = {
+        legend: {
+            text:"Hallo",
+    top: 'bottom'
+  },
+  title: {
+    text: 'Nightingale Chart',
+    subtext: 'Fake Data',
+    left: 'center'
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  series: [
+    {
+      name: 'Nightingale Chart',
+      type: 'pie',
+      radius: [50, 250],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 8
+      },
+      data: [
+        { value: 40, name: 'rose 1' },
+        { value: 38, name: 'rose 2' },
+        { value: 32, name: 'rose 3' },
+        { value: 30, name: 'rose 4' },
+        { value: 28, name: 'rose 5' },
+        { value: 26, name: 'rose 6' },
+        { value: 22, name: 'rose 7' },
+        { value: 18, name: 'rose 8' }
+      ]
+    }
+  ]
+};
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart1.setOption(option);
+</script>
 </html>
