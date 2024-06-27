@@ -337,6 +337,9 @@
             <div class="swiper-wrapper">
                 <div id="pic1" class="swiper-slide" style="width: 50vw;height:40vw;"></div>
                 <div id="pic2" class="swiper-slide" style="width: 50vw;height:40vw;"></div>
+                <div id="pic3" class="swiper-slide" style="width: 50vw;height:40vw;"></div>
+                <div id="pic4" class="swiper-slide" style="width: 50vw;height:40vw;"></div>
+                <div id="pic5" class="swiper-slide" style="width: 50vw;height:40vw;"></div>
             </div>
             <!-- <div class="swiper-pagination"></div>
             添加导航按钮 -->
@@ -596,7 +599,7 @@
     top: 'bottom'
   },
   title: {
-    text: 'Nightingale Chart',
+    text: 'Methods',
     subtext: 'Fake Data',
     left: 'center'
   },
@@ -620,9 +623,9 @@
         borderRadius: 8
       },
       data: [
-        { value: 40, name: 'rose 1' },
-        { value: 38, name: 'rose 2' },
-        { value: 32, name: 'rose 3' },
+        { value: 40, name: 'method 1' },
+        { value: 38, name: 'method 2' },
+        { value: 32, name: 'method 3' },
         { value: 30, name: 'rose 4' },
         { value: 28, name: 'rose 5' },
         { value: 26, name: 'rose 6' },
@@ -645,7 +648,7 @@
     top: 'bottom'
   },
   title: {
-    text: 'Nightingale Chart',
+    text: 'Cell type',
     subtext: 'Fake Data',
     left: 'center'
   },
@@ -669,9 +672,9 @@
         borderRadius: 8
       },
       data: [
-        { value: 40, name: 'rose 1' },
-        { value: 38, name: 'rose 2' },
-        { value: 32, name: 'rose 3' },
+        { value: 40, name: 'Cell type 1' },
+        { value: 38, name: 'Cell type 2' },
+        { value: 32, name: 'Cell type 3' },
         { value: 30, name: 'rose 4' },
         { value: 28, name: 'rose 5' },
         { value: 26, name: 'rose 6' },
@@ -684,6 +687,153 @@
 
       // 使用刚指定的配置项和数据显示图表。
       myChart1.setOption(option);
+
+      var myChart2 = echarts.init(document.getElementById('pic3'));
+        
+      // 指定图表的配置项和数据
+      var option = {
+        legend: {
+            text:"Hallo",
+    top: 'bottom'
+  },
+  title: {
+    text: 'Cell line',
+    subtext: 'Fake Data',
+    left: 'center'
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  series: [
+    {
+      name: 'Nightingale Chart',
+      type: 'pie',
+      radius: [50, 250],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 8
+      },
+      data: [
+        { value: 40, name: 'Cell line 1' },
+        { value: 38, name: 'Cell line 2' },
+        { value: 32, name: 'Cell line 3' },
+        { value: 30, name: 'rose 4' },
+        { value: 28, name: 'rose 5' },
+        { value: 26, name: 'rose 6' },
+        { value: 22, name: 'rose 7' },
+        { value: 18, name: 'rose 8' }
+      ]
+    }
+  ]
+};
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart2.setOption(option);
+
+      var myChart3 = echarts.init(document.getElementById('pic4'));
+        
+      // 指定图表的配置项和数据
+      var option = {
+        legend: {
+            text:"Hallo",
+    top: 'bottom'
+  },
+  title: {
+    text: 'TF',
+    subtext: 'Fake Data',
+    left: 'center'
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  series: [
+    {
+      name: 'Nightingale Chart',
+      type: 'pie',
+      radius: [50, 250],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 8
+      },
+      data: [
+        { value: 40, name: 'TF 1' },
+        { value: 38, name: 'TF 2' },
+        { value: 32, name: 'TF 3' },
+        { value: 30, name: 'rose 4' },
+        { value: 28, name: 'rose 5' },
+        { value: 26, name: 'rose 6' },
+        { value: 22, name: 'rose 7' },
+        { value: 18, name: 'rose 8' }
+      ]
+    }
+  ]
+};
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart3.setOption(option);
+
+      var myChart4 = echarts.init(document.getElementById('pic5'));
+        
+      // 指定图表的配置项和数据
+      var option = {
+        legend: {
+            text:"Hallo",
+    top: 'bottom'
+  },
+  title: {
+    text: 'Diseases',
+    subtext: 'Fake Data',
+    left: 'center'
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      mark: { show: true },
+      dataView: { show: true, readOnly: false },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  series: [
+    {
+      name: 'Nightingale Chart',
+      type: 'pie',
+      radius: [50, 250],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 8
+      },
+      data: [
+        { value: 40, name: 'Disease 1' },
+        { value: 38, name: 'Disease 2' },
+        { value: 32, name: 'Disease 3' },
+        { value: 30, name: 'rose 4' },
+        { value: 28, name: 'rose 5' },
+        { value: 26, name: 'rose 6' },
+        { value: 22, name: 'rose 7' },
+        { value: 18, name: 'rose 8' }
+      ]
+    }
+  ]
+};
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart4.setOption(option);
     </script>
     
 
