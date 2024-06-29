@@ -92,7 +92,7 @@
                         <a href="#" onclick="toggleOption('Option 2', 'ser1')">ChIA-PET</a>
                     </div>
                     <div class="done-btn-container">
-                        <button class="done-btn" onclick="hideDropdown('serContent1')">Done</button>
+                      <button class="done-btn" onclick="hideDropdown('serContent1'); sendSelection('ser1')">Done</button>
                     </div>
                 </div>
             </div>
@@ -162,7 +162,7 @@
                         <a href="#" onclick="toggleOption('Option 58', 'ser4')">NCCIT_Stem-like_Cells</a>
                     </div>
                     <div class="done-btn-container">
-                        <button class="done-btn" onclick="hideDropdown('serContent4')">Done</button>
+                      <button class="done-btn" onclick="hideDropdown('serContent4'); sendSelection('ser4')">Done</button>
                     </div>
                 </div>
             </div>
@@ -239,7 +239,7 @@
                         <a href="#" onclick="toggleOption('Option 63', 'ser2')">NCCIT_Stem-like_Cells</a>
                     </div>
                     <div class="done-btn-container">
-                        <button class="done-btn" onclick="hideDropdown('serContent2')">Done</button>
+                      <button class="done-btn" onclick="hideDropdown('serContent2'); sendSelection('ser2')">Done</button>
                     </div>
                 </div>
             </div>
@@ -269,7 +269,7 @@
                         <a href="#" onclick="toggleOption('Option Q', 'ser3')">ZNF384</a>
                     </div>
                     <div class="done-btn-container">
-                        <button class="done-btn" onclick="hideDropdown('serContent3')">Done</button>
+                      <button class="done-btn" onclick="hideDropdown('serContent3'); sendSelection('ser3')">Done</button>
                     </div>
                 </div>
             </div>
@@ -320,7 +320,7 @@
                         <a href="#" onclick="toggleOption('Option 38', 'ser5')">Triple-Negative Breast Cancer</a>
                     </div>
                     <div class="done-btn-container">
-                        <button class="done-btn" onclick="hideDropdown('serContent5')">Done</button>
+                      <button class="done-btn" onclick="hideDropdown('serContent5'); sendSelection('ser5')">Done</button>
                     </div>
                 </div>
             </div>
@@ -497,7 +497,7 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        function toggleDropdown(serId) {
+function toggleDropdown(serId) {
             var serContent = document.getElementById(serId);
             var isOpen = serContent.style.display === 'block';
             hideAllDropdowns(); // 关闭所有下拉框
@@ -509,7 +509,6 @@
                 document.addEventListener('click', function outsideClickListener(event) {
                     if (!serContent.contains(event.target) && !serContent.previousElementSibling.contains(event.target)) {
                         hideDropdown(serId);
-                        clearCurrentSelections(serId);
                         document.removeEventListener('click', outsideClickListener);
                     }
                 });
@@ -571,8 +570,49 @@
             serbtn.style.width = serContent.offsetWidth + 'px';
         }
     
+        function sendSelection(serId) {
+            var selectedOptions = document.querySelectorAll(`#${serId} .ser-content a.selected`);
+            var selectedValues = Array.from(selectedOptions).map(option => option.textContent);
+
+            fetch('http://localhost:3000/api/submit-selections', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ serId: serId, selections: selectedValues })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+
         function search() {
-            console.log("Searching...");
+            var selections = {};
+            var serIds = ['ser1', 'ser2', 'ser3', 'ser4', 'ser5'];
+            serIds.forEach(function(serId) {
+                var selectedOptions = document.querySelectorAll(`#${serId} .ser-content a.selected`);
+                var selectedValues = Array.from(selectedOptions).map(option => option.textContent);
+                selections[serId] = selectedValues;
+            });
+
+            fetch('http://localhost:3000/api/search', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(selections)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Search Success:', data);
+            })
+            .catch((error) => {
+                console.error('Search Error:', error);
+            });
         }
 
 
