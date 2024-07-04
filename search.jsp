@@ -574,7 +574,7 @@
         legend: {
             type: 'scroll',
             orient: 'vertical',
-            right: '8%', 
+            right: '2%', 
             top: 20,
             bottom: 20,
             data: data.legendData
@@ -627,7 +627,7 @@
         legend: {
             type: 'scroll',
             orient: 'vertical',
-            right: '8%', 
+            right: '2%', 
             top: 20,
             bottom: 20,
             data: data.legendData
@@ -678,7 +678,7 @@
         legend: {
             type: 'scroll',
             orient: 'vertical',
-            right: '8%', 
+            right: '2%', 
             top: 20,
             bottom: 20,
             data: data.legendData
@@ -729,7 +729,7 @@
         legend: {
             type: 'scroll',
             orient: 'vertical',
-            right: '8%', 
+            right: '2%', 
             top: 20,
             bottom: 20,
             data: data.legendData
@@ -780,7 +780,7 @@
         legend: {
             type: 'scroll',
             orient: 'vertical',
-            right: '8%', 
+            right: '2%', 
             top: 20,
             bottom: 20,
             data: data.legendData
