@@ -1,0 +1,726 @@
+[
+    {
+        "name": "HiChIP",
+        "value": 150
+    },
+    {
+        "name": "ChIA-PET",
+        "value": 152
+    }
+]
+
+[
+    {
+        "name": "TAE Resistant Neuroblastoma Cell",
+        "value": 3
+    },
+    {
+        "name": "Prostate Cancer Cell",
+        "value": 11
+    },
+    {
+        "name": "Neuroblastoma Cell",
+        "value": 2
+    },
+    {
+        "name": "Lymphoblastoid Cell",
+        "value": 8
+    },
+    {
+        "name": "Colorectal Carcinoma Cell",
+        "value": 4
+    },
+    {
+        "name": "Activated CD4 positive, naive alpha-beta T primary cell",
+        "value": 4
+    },
+    {
+        "name": "Bladder Carcinoma Cell",
+        "value": 6
+    },
+    {
+        "name": "Human Embryonic Kidney Cell",
+        "value": 12
+    },
+    {
+        "name": "Hepatocyte",
+        "value": 2
+    },
+    {
+        "name": "Triple-Negative Breast Cancer Cell",
+        "value": 7
+    },
+    {
+        "name": "Activated CD8-positive, alpha-beta memory T primary cell",
+        "value": 3
+    },
+    {
+        "name": "Immortalized Prostate Epithelial Cell",
+        "value": 1
+    },
+    {
+        "name": "Prostate Carcinoma Cell",
+        "value": 14
+    },
+    {
+        "name": "Umbilical Vein Endotheliall Cell",
+        "value": 4
+    },
+    {
+        "name": "Fetal Buttock/Thigh Fibroblast",
+        "value": 2
+    },
+    {
+        "name": "Chronic Myeloid Leukemia Cell",
+        "value": 8
+    },
+    {
+        "name": "Skin Fibroblast",
+        "value": 2
+    },
+    {
+        "name": "CD4-positive, alpha-beta T primary cell",
+        "value": 2
+    },
+    {
+        "name": "Kidney Rhabdoid Tumor Cell",
+        "value": 2
+    },
+    {
+        "name": "Retinal Pigment Epithelial cell",
+        "value": 2
+    },
+    {
+        "name": "Activated CD8-positive, alpha-beta T primary cell",
+        "value": 1
+    },
+    {
+        "name": "T-ALL Cell",
+        "value": 9
+    },
+    {
+        "name": "Lung Carcinoma Cell",
+        "value": 4
+    },
+    {
+        "name": "Diffuse Histiocytic Lymphoma Cell",
+        "value": 4
+    },
+    {
+        "name": "B Cell Precursor Leukemia Cell",
+        "value": 4
+    },
+    {
+        "name": "NCCIT_Stem-like_Cells",
+        "value": 6
+    },
+    {
+        "name": "Surface Ectoderm Cell",
+        "value": 6
+    },
+    {
+        "name": "hTERT-Immortalized Cell",
+        "value": 2
+    },
+    {
+        "name": "CD4-positive, alpha-beta memory T primary cell",
+        "value": 2
+    },
+    {
+        "name": "Early Monocycte/Macrophages",
+        "value": 4
+    },
+    {
+        "name": "CD4-positive naive resting alpha-beta T primary cell",
+        "value": 1
+    },
+    {
+        "name": "Activated CD4-positive, alpha-beta memory T primary cell",
+        "value": 4
+    },
+    {
+        "name": "Breast Adenocarcinoma Cell",
+        "value": 3
+    },
+    {
+        "name": "Neural Cell",
+        "value": 4
+    },
+    {
+        "name": "Mantle Cell Lymphoma Cell",
+        "value": 2
+    },
+    {
+        "name": "Mammary Epithelial Cell",
+        "value": 1
+    },
+    {
+        "name": "Induced Pluripotent Stem Cells Derived from PBMC",
+        "value": 2
+    },
+    {
+        "name": "Neural Progenitor Cell",
+        "value": 2
+    },
+    {
+        "name": "Embryonic Stem Cell",
+        "value": 10
+    },
+    {
+        "name": "Activated CD4-positive, alpha-beta T primary cell",
+        "value": 4
+    },
+    {
+        "name": "Pulmonary Artery Endothelial Cell",
+        "value": 4
+    },
+    {
+        "name": "Myloid Cell",
+        "value": 9
+    },
+    {
+        "name": "Ewing Sarcoma Cell",
+        "value": 20
+    },
+    {
+        "name": "Fetal Lung Fibroblast",
+        "value": 2
+    },
+    {
+        "name": "Thyroid Carcinoma Cell",
+        "value": 2
+    },
+    {
+        "name": "Activated B Cell",
+        "value": 1
+    },
+    {
+        "name": "B-ALL Cell",
+        "value": 4
+    },
+    {
+        "name": "Cervical Carcinoma Cell",
+        "value": 9
+    },
+    {
+        "name": "Monocyte",
+        "value": 6
+    },
+    {
+        "name": "Erythroid Precursor Cell",
+        "value": 2
+    },
+    {
+        "name": "B-Lymphocyte",
+        "value": 16
+    },
+    {
+        "name": "Hepatocellular Carcinoma Cell",
+        "value": 4
+    },
+    {
+        "name": "Fibroblast Primary Cell",
+        "value": 2
+    },
+    {
+        "name": "Multiple Myeloma Cell",
+        "value": 6
+    },
+    {
+        "name": "H9 Human Embryonic Stem Cell",
+        "value": 35
+    },
+    {
+        "name": "B Primary Cell",
+        "value": 1
+    },
+    {
+        "name": "CD8-positive, alpha-beta memory T primary cell",
+        "value": 3
+    },
+    {
+        "name": "Common myeloid progenitor, CD34-positive primary cell",
+        "value": 2
+    }
+]
+
+[
+    {
+        "name": "NB4",
+        "value": 3
+    },
+    {
+        "name": "Jurkat clone E61",
+        "value": 2
+    },
+    {
+        "name": "OCI-AML3",
+        "value": 4
+    },
+    {
+        "name": "MB157",
+        "value": 5
+    },
+    {
+        "name": "ARPE-19",
+        "value": 2
+    },
+    {
+        "name": "A549",
+        "value": 2
+    },
+    {
+        "name": "HT-1376",
+        "value": 2
+    },
+    {
+        "name": "HeLa-S3",
+        "value": 9
+    },
+    {
+        "name": "Erythroid precursor",
+        "value": 2
+    },
+    {
+        "name": "originated from H1-hESC",
+        "value": 4
+    },
+    {
+        "name": "DND41",
+        "value": 4
+    },
+    {
+        "name": "AG04449",
+        "value": 2
+    },
+    {
+        "name": "GM10248",
+        "value": 2
+    },
+    {
+        "name": "MSFIB",
+        "value": 2
+    },
+    {
+        "name": "MCF-10A",
+        "value": 1
+    },
+    {
+        "name": "MSiPS",
+        "value": 2
+    },
+    {
+        "name": "LNCAP",
+        "value": 2
+    },
+    {
+        "name": "K562",
+        "value": 8
+    },
+    {
+        "name": "DU 145",
+        "value": 2
+    },
+    {
+        "name": "Rec-1",
+        "value": 2
+    },
+    {
+        "name": "NCCIT_Stem-like_Cells",
+        "value": 6
+    },
+    {
+        "name": "MSLCL",
+        "value": 2
+    },
+    {
+        "name": "hTERT-HME1",
+        "value": 2
+    },
+    {
+        "name": "G401",
+        "value": 2
+    },
+    {
+        "name": "A673",
+        "value": 20
+    },
+    {
+        "name": "HCC1599",
+        "value": 2
+    },
+    {
+        "name": "SK-N-SH",
+        "value": 1
+    },
+    {
+        "name": "U937-PR9",
+        "value": 6
+    },
+    {
+        "name": "SEM",
+        "value": 4
+    },
+    {
+        "name": "H9 hESCs",
+        "value": 41
+    },
+    {
+        "name": "GM12878",
+        "value": 5
+    },
+    {
+        "name": "HEK293T",
+        "value": 2
+    },
+    {
+        "name": "THP-1",
+        "value": 6
+    },
+    {
+        "name": "GM19238",
+        "value": 2
+    },
+    {
+        "name": "MCF-7",
+        "value": 3
+    },
+    {
+        "name": "GM19239",
+        "value": 2
+    },
+    {
+        "name": "K1",
+        "value": 2
+    },
+    {
+        "name": "HCT-116",
+        "value": 4
+    },
+    {
+        "name": "BJ",
+        "value": 2
+    },
+    {
+        "name": "originated from H9-hESC",
+        "value": 4
+    },
+    {
+        "name": "Multiple Myeloma Cell Line",
+        "value": 6
+    },
+    {
+        "name": "KU-19-19",
+        "value": 2
+    },
+    {
+        "name": "JIH5",
+        "value": 3
+    },
+    {
+        "name": "Pulmonary Artery Endothelial Cell",
+        "value": 4
+    },
+    {
+        "name": "Lymphoblastoid cell lines (LCLs)",
+        "value": 6
+    },
+    {
+        "name": "VCaP",
+        "value": 11
+    },
+    {
+        "name": "22Rv1",
+        "value": 10
+    },
+    {
+        "name": "ALL cell line",
+        "value": 29
+    },
+    {
+        "name": "HepG2",
+        "value": 4
+    },
+    {
+        "name": "HEK-293",
+        "value": 10
+    },
+    {
+        "name": "HUVEC",
+        "value": 4
+    },
+    {
+        "name": "SU-DHL-4",
+        "value": 2
+    },
+    {
+        "name": "RWPE1",
+        "value": 1
+    },
+    {
+        "name": "SU-DHL-2",
+        "value": 2
+    },
+    {
+        "name": "GM12891",
+        "value": 2
+    },
+    {
+        "name": "IMR-90",
+        "value": 2
+    },
+    {
+        "name": "GM12892",
+        "value": 1
+    },
+    {
+        "name": "GM19240",
+        "value": 2
+    },
+    {
+        "name": "NCI-H1437",
+        "value": 2
+    },
+    {
+        "name": "HT-1197",
+        "value": 2
+    },
+    {
+        "name": "Jurkat",
+        "value": 3
+    },
+    {
+        "name": "hESCs",
+        "value": 10
+    },
+    {
+        "name": "KELLY",
+        "value": 4
+    }
+]
+
+[
+    {
+        "name": "DAXX",
+        "value": 1
+    },
+    {
+        "name": "ZNF384",
+        "value": 2
+    },
+    {
+        "name": "CTCF",
+        "value": 135
+    },
+    {
+        "name": "ARID1A",
+        "value": 2
+    },
+    {
+        "name": "KLF4",
+        "value": 3
+    },
+    {
+        "name": "SMC1A",
+        "value": 18
+    },
+    {
+        "name": "GATA1",
+        "value": 2
+    },
+    {
+        "name": "PML",
+        "value": 3
+    },
+    {
+        "name": "SMC1",
+        "value": 28
+    },
+    {
+        "name": "OCT4",
+        "value": 4
+    },
+    {
+        "name": "YY1",
+        "value": 17
+    },
+    {
+        "name": "AR",
+        "value": 4
+    },
+    {
+        "name": "RAD21",
+        "value": 74
+    },
+    {
+        "name": "RARA",
+        "value": 3
+    },
+    {
+        "name": "NANOG",
+        "value": 4
+    },
+    {
+        "name": "No Treatment",
+        "value": 1
+    },
+    {
+        "name": "ERG",
+        "value": 1
+    }
+]
+
+[
+    {
+        "name": "TNF-induced inflammatory signaling",
+        "value": 1
+    },
+    {
+        "name": "Type 2 Diabetes",
+        "value": 1
+    },
+    {
+        "name": "Chronic Myelogenous Leukemia",
+        "value": 10
+    },
+    {
+        "name": "Fibrocystic Disease",
+        "value": 1
+    },
+    {
+        "name": "Cervical Carcinoma",
+        "value": 9
+    },
+    {
+        "name": "Neuroblastoma",
+        "value": 5
+    },
+    {
+        "name": "Myeloma",
+        "value": 6
+    },
+    {
+        "name": "Bladder carcinoma",
+        "value": 6
+    },
+    {
+        "name": "Acute Promyeloid Leukemia",
+        "value": 9
+    },
+    {
+        "name": "Abortion",
+        "value": 9
+    },
+    {
+        "name": "Acute monocytic Leukemia",
+        "value": 6
+    },
+    {
+        "name": "Pulmonary Arterial Hypertension",
+        "value": 4
+    },
+    {
+        "name": "Colorectal Carcinoma",
+        "value": 4
+    },
+    {
+        "name": "Triple-Negative Breast Cancer",
+        "value": 7
+    },
+    {
+        "name": "Acute Myeloid Leukemia",
+        "value": 4
+    },
+    {
+        "name": "T-Acute Lymphoblastic Leukemia",
+        "value": 4
+    },
+    {
+        "name": "Acute Lymphoblastic Leukemia",
+        "value": 38
+    },
+    {
+        "name": "Type 2 Diabetes",
+        "value": 1
+    },
+    {
+        "name": "Thyroid Carcinoma",
+        "value": 2
+    },
+    {
+        "name": "Lung Carcinoma",
+        "value": 2
+    },
+    {
+        "name": "Hepatocellular Carcinoma",
+        "value": 4
+    },
+    {
+        "name": "Systemic Lupus Erythematosus",
+        "value": 6
+    },
+    {
+        "name": "Large Cell Lymphoma; Diffuse Histiocytic Lymphoma",
+        "value": 2
+    },
+    {
+        "name": "Type 2 Diabetes",
+        "value": 1
+    },
+    {
+        "name": "Ewings Sarcoma",
+        "value": 20
+    },
+    {
+        "name": "Acute T Cell Leukemia",
+        "value": 3
+    },
+    {
+        "name": "Stage 1 Adenocarcinoma; non-small Lung cancer",
+        "value": 2
+    },
+    {
+        "name": "Unspecified",
+        "value": 22
+    },
+    {
+        "name": "Normal",
+        "value": 74
+    },
+    {
+        "name": "Type 2 Diabetes",
+        "value": 1
+    },
+    {
+        "name": "Diffuse Histiocytic Lymphoma",
+        "value": 2
+    },
+    {
+        "name": "Type 2 Diabetes",
+        "value": 1
+    },
+    {
+        "name": "Type 2 Diabetes",
+        "value": 1
+    },
+    {
+        "name": "Clinically Normal; 4 paternal cousins have Cornelia de Lange syndrome",
+        "value": 2
+    },
+    {
+        "name": "Rhabdoid Tumor",
+        "value": 2
+    },
+    {
+        "name": "Mantle Cell Lymphoma",
+        "value": 2
+    },
+    {
+        "name": "Prostate Cancer",
+        "value": 25
+    },
+    {
+        "name": "Breast Adenocarcinoma",
+        "value": 3
+    }
+]
