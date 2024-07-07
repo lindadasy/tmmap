@@ -11,6 +11,59 @@
         .linewid{
             letter-spacing: 0.02vw;
         }
+        .photoabout{
+            display: flex;
+            flex-wrap: wrap;
+            width: 68vw;
+            margin: 0 auto;
+            /* background-color: #f0f8ff; */
+            height: 143vw;
+            justify-content: center;
+        }
+        .painner{
+            width: 24vw;
+            height: 31vw;
+            margin: 2vw 4vw;
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: column;
+            /* background-color: pink; */
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        }
+        .peoimage {
+            flex: 2;
+            background-color: lightgray; 
+            /* object-fit: cover; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .peoinnerimage{
+            margin-top: 3vw;
+            width: 17vw;
+            height: 17vw;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 0.3vw solid black;
+        }
+        .peotext {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            /* border: 1vw dashed #82aede; */
+            background-color: lightgray;
+            /* border-radius: 0.9vw; */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+        .peoinnertext{
+            width: 17vw;
+            /* height: 10vw; */
+            margin: 1vw 0 1vw 3vw;
+            /* background-color: #fff; */
+            text-align: center;
+        }
     </style>
 </head>
 <body class="blue">
@@ -98,11 +151,12 @@
             </div>
             <div class="square">
                 <div class="smboxab" style = "border-left:#466d97 0.1vw solid;">
-                    <img src="./xiong.jpg" alt="">
+                    <img style="width: 34vw;" src="./底1.png" alt="">
                 </div>
             </div>
         </div>
         <div class="abmidbox">
+            <h1 class="darkblue" style="font-size: 2vw;margin-top: 2vw;">About the lab</h1><br>
             <div class="abintro">
                 <p>
                 The Xiong Lab at Zhejiang University Medical Center seeks to understand the regulatory circuits and mechanisms of genetic diseases, including brain and heart disorders, from multiple layers, including genetics, epigenomics, epitranscriptomics (i.e. RNA modification), and transcriptome. The ultimate goal of our research is to identify the "missing regulation" of disease genetics and help guide the development of new therapeutics for human disease from multiple molecular levels.</p>
@@ -113,17 +167,30 @@
             </div>
         </div>
 
-        <div class="abmidbox">
-            <div class="abbgbox">
-                <h2 class="darkblue">Team Member</h2>
-                <br>
-                <p>1.xxxxxxxxxxx xxxxxxxxxxxxxx xxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx</p>
-                <p>2.xxxxxxxxxxxxxxxx</p>
-                <p>3.xxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxxxx xxxxxxxxxxxx xxxx xxxxxxxxxx xxxxxxxx</p>
-                <p>4.xxxxxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxxxx x</p>
-                <p>5.xxxxxxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx</p>
-                <p>xxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxx</p>
-                <p>xxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxx</p>
+        <div class="abmidbox" style="height: 149vw;">
+            <h1 class="darkblue" style="font-size: 2vw;margin-top: 2vw;">Team Member</h1>
+            <br>
+            <div class="photoabout">
+                <div class="painner" style="margin-top: 1vw;">
+                    <div class="peoimage">
+                        <div class="peoinnerimage">
+                            <img style="object-fit: cover;border-radius: 50%;" src="./占位1.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="peotext">
+                        <div class="peoinnertext">
+                            <p class="darkblue" style="font-size: 2vw;"><b>Yin Yang</b></p>
+                            <p style="font-size: 1.2vw;">Zhejiang University</p>
+                            <p style="font-size: 1.2vw;">Leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="painner" style="margin-top: 1vw;"></div>
+                <div class="painner"></div>
+                <div class="painner"></div>
+                <div class="painner"></div>
+                <div class="painner"></div>
+                <div class="painner"></div>
             </div>
         </div>
 
