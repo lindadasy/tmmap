@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        .tt p{
+            text-align: justify;
+            line-height: normal;
+        }
+    </style>
 </head>
 <body class="blue">
     <header>
@@ -67,9 +73,10 @@
         </div>
     </header>
     <!-- 侧边栏 -->
-    <div id="sidebar" style="height: 8.3vw;top: 17vw;">
+    <div id="sidebar" style="height: 12.5w;top: 17vw;">
         <a class="sidebar-link" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(4); return false;">Search</a>
-        <a class="sidebar-link" style="border-bottom: none;" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(4); return false;">Download</a>
+        <a class="sidebar-link" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(100); return false;">Download</a>
+        <a class="sidebar-link" style="border-bottom: none;" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(120); return false;">Visualization</a>
     </div>
 
 
@@ -79,11 +86,13 @@
         <div class="tt">
             <h3 class="darkblue">Search</h3>
             <hr class="darkblue">
-            <p>1.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-            <p>2.xxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-            <p>3.</p>
-            <img src="./占位3.png" alt="">
-            <p>4.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+            <p>Here, we demonstrate how to obtain samples that meet the criteria using our search and filter functions.</p>
+            <img src="./tt1.png" alt="">
+            <img src="./tt2.png" alt="">
+            <p style="margin-top: 2vw;">◆Users can enter a GSM or GSE number in the input box and click the "Search" button. The retrieved data will be displayed in the table below. Clicking on the GSE or GSM number in the table will redirect to the corresponding GEO page for the sample. Clicking on peaks.bed, loops.bed, or annotation.txt will download the respective files. Clicking on the sample ID will navigate to the sample's detail page.</p>
+            <img src="./tt3.png" alt="">
+            <p style="margin-top: 1vw;">◆Users can select the data that meets their requirements in the filter box. We have divided the filter criteria into five categories: Methods, Cell Type, Cell Line, TF, and Health states. Each filter box allows for multiple selections. After making selections, users need to click the "Done" button below. If no selection is made in a filter box, all options are selected by default. At any point during the selection process, users can click "Clear" to reset all options to their default state. After completing the selections in all five filter boxes, users can click the "Search" button. Data that meets the criteria will be displayed in the table below. The distribution of the samples meeting the criteria across these five categories will be displayed in a pie chart.</p>
+            <img src="./tt4.png" alt="">
         </div>
         <div class="tt">
             <h3 class="darkblue">Download</h3>
@@ -91,9 +100,44 @@
             <p>1.xxxxxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxx xxxxxxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxx xxxxxxx</p>
             <!-- <p>2.xxxxxxxxxxxxxxxxxxxxxxxxxxxx</p> -->
             <p>2.</p>
-            <img src="./占位7.png" alt="">
+            <img src="./tt5.png" alt="">
             <p>3.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        </div>
+        <div class="tt">
+            <h3 class="darkblue">Visualization</h3>
         </div>
     </div>
 </body>
+<script>
+    function scrollToPosition(percentage) {
+        const target = percentage * (document.documentElement.scrollHeight - window.innerHeight) / 100;
+        
+        if ('scrollBehavior' in document.documentElement.style) {
+          window.scrollTo({
+            top: target,
+            behavior: 'smooth'
+          });
+        } else {
+          const start = window.scrollY || window.pageYOffset;
+          const startTime = performance.now();
+          const duration = 1000; // 滚动持续时间，单位为毫秒
+        
+          function scroll() {
+            const currentTime = performance.now();
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+            const easing = easeOutQuart(progress);
+            const newPosition = start + (target - start) * easing;
+            
+            window.scrollTo(0, newPosition);
+        
+            if (timeElapsed < duration) {
+              requestAnimationFrame(scroll);
+            }
+          }
+        
+          scroll();
+        }
+      }
+</script>
 </html>
