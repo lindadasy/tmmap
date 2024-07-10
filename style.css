@@ -783,3 +783,28 @@ img {
     color: #466d97;
 }
 
+/* end */
+.endbox{
+    width: 100%;
+    position: absolute;
+    /* top:100vw ; */
+    background-color: white;
+    height: 11vw;
+    display: flex;
+}
+.endtext {
+    flex: 1;
+    /* padding: 2vw; */
+}
+.endtextinner{
+    padding:0 1vw 1vw 3vw ;
+    margin: 1.5vw 0vw 0vw 9vw;
+    font-size: 1vw;
+    /* border-right: black 0.1vw solid; */
+}
+.endimage {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
