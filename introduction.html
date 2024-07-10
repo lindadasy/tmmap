@@ -8,31 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <style>
-        .endbox{
-            width: 100%;
-            position: absolute;
-            /* top:100vw ; */
-            background-color: white;
-            height: 11vw;
-            display: flex;
-        }
-        .endtext {
-            flex: 1;
-            /* padding: 2vw; */
-        }
-        .endtextinner{
-            padding:1vw 1vw 1vw 3vw ;
-            margin: 1.5vw 0vw 0vw 9vw;
-            /* border-right: black 0.1vw solid; */
-        }
-        .endimage {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
 </head>
 <body class="blue">
     <header>
@@ -94,9 +69,9 @@
 
     <!-- 侧边栏 -->
     <div id="sidebar">
-        <a class="sidebar-link" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(4); return false;">Database</a>
-        <a class="sidebar-link" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(4); return false;">HiChIP and Chia-PET</a>
-        <a class="sidebar-link" style="border-bottom: 0;" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(4); return false;">Relevant Articles</a>
+        <a class="sidebar-link" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(25); return false;">Database</a>
+        <a class="sidebar-link" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(60); return false;">HiChIP and Chia-PET</a>
+        <a class="sidebar-link" style="border-bottom: 0;" data-percentage-from="2" data-percentage-to="8" href="#" onclick="scrollToPosition(85); return false;">Relevant Articles</a>
     </div>
 
     <!-- 正页 -->
@@ -240,13 +215,45 @@
                 <p><b>Location:</b> Zhejiang University Medical Center, Hangzhou, China</p>
                 <br>
                 <p><b>Email: </b>xiongxs@zju.edu.cn</p>
+                <br>
+                <p><b>Contact for TM-Map: </b>yangy.21@intl.zju.edu.cn</p>
             </div>
         </div>
         <div class="endimage">
             <img style="width: 27vw;" src="./底1.png" alt="">
         </div>
     </div>
-
-    
+<script>
+    function scrollToPosition(percentage) {
+        const target = percentage * (document.documentElement.scrollHeight - window.innerHeight) / 100;
+        
+        if ('scrollBehavior' in document.documentElement.style) {
+          window.scrollTo({
+            top: target,
+            behavior: 'smooth'
+          });
+        } else {
+          const start = window.scrollY || window.pageYOffset;
+          const startTime = performance.now();
+          const duration = 1000; // 滚动持续时间，单位为毫秒
+        
+          function scroll() {
+            const currentTime = performance.now();
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 1);
+            const easing = easeOutQuart(progress);
+            const newPosition = start + (target - start) * easing;
+            
+            window.scrollTo(0, newPosition);
+        
+            if (timeElapsed < duration) {
+              requestAnimationFrame(scroll);
+            }
+          }
+        
+          scroll();
+        }
+      }
+</script>
 </body>
 </html>
